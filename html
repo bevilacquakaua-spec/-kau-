@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kauã Bevilacqua | Bovinocultura de Leite</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Kauã Bevilacqua</h1>
+        <p>Bovinocultura de Leite</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <h2>Blog sobre Bovinocultura de Leite</h2>
+
+            <p>
+                Informações, curiosidades e conhecimentos sobre a criação
+                de bovinos destinados à produção de leite.
+            </p>
+
+            <button id="botaoSaibaMais">Saiba mais</button>
+        </section>
+
+        <section id="artigos">
+            <h2>Artigos</h2>
+
+            <div class="articles-container">
+
+                <article>
+                    <h3>🐄 Alimentação do Gado Leiteiro</h3>
+
+                    <p>
+                        A alimentação adequada é fundamental para garantir
+                        a saúde dos animais e uma boa produção de leite.
+                    </p>
+
+                    <button class="lerMais"
+                        data-texto="Uma dieta equilibrada deve fornecer proteínas,
+                        energia, minerais, vitaminas e água em quantidade adequada.
+                        A alimentação também precisa ser adaptada à fase de produção
+                        de cada animal.">
+                        Ler mais
+                    </button>
+                </article>
+
+                <article>
+                    <h3>🥛 Produção de Leite</h3>
+
+                    <p>
+                        A produção de leite depende de fatores como genética,
+                        alimentação, manejo, saúde e conforto dos animais.
+                    </p>
+
+                    <button class="lerMais"
+                        data-texto="Para obter uma boa produção, o produtor deve
+                        oferecer condições adequadas de alimentação, água, higiene,
+                        instalações e manejo. O acompanhamento da saúde do rebanho
+                        também é essencial.">
+                        Ler mais
+                    </button>
+                </article>
+
+                <article>
+                    <h3>🌱 Manejo do Rebanho</h3>
+
+                    <p>
+                        Um bom manejo contribui para o bem-estar dos animais,
+                        melhora a produtividade e reduz problemas no rebanho.
+                    </p>
+
+                    <button class="lerMais"
+                        data-texto="O manejo envolve alimentação, ordenha,
+                        vacinação, controle de parasitas, reprodução e cuidados
+                        com as instalações. Um manejo correto ajuda a manter
+                        animais saudáveis e produtivos.">
+                        Ler mais
+                    </button>
+                </article>
+
+                <article>
+                    <h3>❤️ Bem-estar Animal</h3>
+
+                    <p>
+                        O bem-estar dos bovinos é importante para a saúde,
+                        qualidade de vida e eficiência da produção leiteira.
+                    </p>
+
+                    <button class="lerMais"
+                        data-texto="Animais precisam de acesso à água limpa,
+                        alimento, sombra, descanso e instalações adequadas.
+                        O manejo tranquilo também ajuda a diminuir o estresse
+                        durante as atividades da propriedade.">
+                        Ler mais
+                    </button>
+                </article>
+
+                <article>
+                    <h3>🧬 Genética na Produção</h3>
+
+                    <p>
+                        A genética pode contribuir para características
+                        desejáveis, como produção, resistência e qualidade.
+                    </p>
+
+                    <button class="lerMais"
+                        data-texto="A seleção genética pode ser utilizada para
+                        buscar animais com características adequadas aos objetivos
+                        da propriedade, sempre considerando saúde, fertilidade,
+                        longevidade e produtividade.">
+                        Ler mais
+                    </button>
+                </article>
+
+                <article>
+                    <h3>💧 Importância da Água</h3>
+
+                    <p>
+                        A água é um dos recursos mais importantes para os bovinos,
+                        especialmente para animais em produção de leite.
+                    </p>
+
+                    <button class="lerMais"
+                        data-texto="Os bovinos devem ter acesso contínuo a água
+                        limpa e de boa qualidade. O consumo de água está diretamente
+                        relacionado ao funcionamento do organismo e à produção
+                        de leite.">
+                        Ler mais
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre o Blog</h2>
+
+            <p>
+                O blog <strong>Kauã Bevilacqua</strong> foi criado com o objetivo
+                de apresentar conteúdos sobre bovinocultura de leite, abordando
+                temas relacionados à alimentação, manejo, produção, genética,
+                saúde e bem-estar dos bovinos.
+            </p>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Entre em contato</h2>
+
+            <form id="formulario">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+
+            <p id="mensagemFormulario"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="ano"></span> Kauã Bevilacqua -
+            Bovinocultura de Leite
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
