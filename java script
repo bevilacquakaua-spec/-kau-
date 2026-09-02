@@ -1,0 +1,57 @@
+// Atualiza automaticamente o ano do rodapé
+
+const ano = document.getElementById("ano");
+
+ano.textContent = new Date().getFullYear();
+
+
+// Botão "Saiba mais"
+
+const botaoSaibaMais = document.getElementById("botaoSaibaMais");
+
+botaoSaibaMais.addEventListener("click", function () {
+
+    document.getElementById("artigos").scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
+
+
+// Botões "Ler mais"
+
+const botoesLerMais = document.querySelectorAll(".lerMais");
+
+botoesLerMais.forEach(function (botao) {
+
+    botao.addEventListener("click", function () {
+
+        const texto = botao.getAttribute("data-texto");
+
+        alert(texto);
+
+    });
+
+});
+
+
+// Formulário de contato
+
+const formulario = document.getElementById("formulario");
+const mensagemFormulario =
+    document.getElementById("mensagemFormulario");
+
+formulario.addEventListener("submit", function (evento) {
+
+    evento.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+
+    mensagemFormulario.textContent =
+        `Obrigado, ${nome}! Sua mensagem foi recebida.`;
+
+    mensagemFormulario.style.color = "#183C63";
+
+    formulario.reset();
+
+});
